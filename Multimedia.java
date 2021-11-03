@@ -1,11 +1,22 @@
+/**
+ *Universidad del Valle de Guatemala
+ *Programación Orientada a Objetos
+ *Carné 21298
+ * @author Angel Figueroa
+ *
+ * Clase Multimedia:  : Esta será la clase madre de los diferentes métodos de 
+   comentarios que se pueden realizar en una publicación (Audios, imágenes, videos, textos)
+ */
+
+
 import java.util.Scanner; 
 import java.util.*;
 
-public class Multimedia extends Post{
+public class Multimedia extends Post{ //hereda a la clase Post
     Scanner ScanInt = new Scanner(System.in);
     Scanner ScanString = new Scanner(System.in);
     
-    public void Video(){
+    public void Video(){ // caracteristicas y datos de video
         System.out.println("Ingresa el URL del Video: ");
         String videoLink = ScanString.nextLine();
         System.out.println("Ingresa el tamaño del video (KB): ");
@@ -18,7 +29,7 @@ public class Multimedia extends Post{
         commented();
     }
     
-    public void Audio(){
+    public void Audio(){ // caracteristicas y datos de audio
         System.out.println("Ingresa el URL del Audio:");
         String audioLink = ScanString.nextLine();
         System.out.println("Ingresa el tamaño en KB del Audio");
@@ -33,7 +44,7 @@ public class Multimedia extends Post{
         commented();
     }
     
-    public void Imagen(){
+    public void Imagen(){ // caracteristicas y datos de imagen
         System.out.println("Ingrese el URL de la imagen:");
         String ImagenLink = ScanString.nextLine();
         System.out.println("Ingresa el tamaño de imagen (KB)");
@@ -50,7 +61,7 @@ public class Multimedia extends Post{
         commented();
     }
     
-    public void eleccion(){
+    public void eleccion(){ // eleccion de multimedia
         System.out.println("----------------------------");
         System.out.println("¿Que opción desea ejecutar? ");
         System.out.println("(1). Publicar Video");
